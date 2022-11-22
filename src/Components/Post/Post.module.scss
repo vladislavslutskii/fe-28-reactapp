@@ -1,0 +1,118 @@
+.Post {
+  background-color: #fff;
+  &__Dark {
+    background-color: #313037;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 1120px;
+    margin: 0 auto;
+    &__buttonAndIDWrap {
+      margin-top: 72px;
+      margin-right: auto;
+      display: flex;
+    }
+    &__titleWrap {
+      margin-top: 32px;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 80px;
+      color: #313037;
+      &__Dark {
+        color: #fff;
+      }
+    }
+    &__imgWrap {
+      width: 992px;
+      height: 518px;
+      margin: 0 auto;
+      &__img {
+        margin-top: 42px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__textWrap {
+      margin-top: 48px;
+      max-width: 922px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 48px;
+      &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        color: #313037;
+        &__Dark {
+          color: #fff;
+        }
+      }
+    }
+    &__buttonsWrap {
+      margin-bottom: 72px;
+      width: 922px;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      justify-content: space-between;
+      &__rightSide {
+        display: flex;
+      }
+    }
+    &__Dark {
+      background-color: #313037;
+    }
+  }
+}
+.linkWrap {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #313037;
+  text-decoration: none;
+  &__Dark {
+    color: #fff;
+  }
+}
+.idWrap {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8d8e97;
+  margin-left: 8px;
+}
+
+.ButtonIconLike {
+  margin-left: 0;
+  background: #e8e8e8;
+  &:hover {
+    background: blue;
+  }
+  &:disabled {
+    color: #8d8e97;
+    background: #e8e8e8;
+    svg > path {
+      fill: #8d8e97;
+    }
+  }
+}
+.ButtonIconDis {
+  background: #e8e8e8;
+  &:hover {
+    background: red;
+    svg > path {
+      fill: #dadada;
+    }
+  }
+}
+.Book {
+  margin-right: 15px;
+}
+.ButtonWIcon {
+  margin-right: 0;
+}

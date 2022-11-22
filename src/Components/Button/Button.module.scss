@@ -1,0 +1,126 @@
+.primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 132px;
+  height: 56px;
+  margin: 50px 10px;
+  background: #2231aa;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  &:hover {
+    background: #5360cd;
+  }
+  &:disabled {
+    color: #8d8e97;
+    background: #e8e8e8;
+  }
+}
+.secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 132px;
+  height: 56px;
+  margin: 50px 10px;
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  color: #313037;
+  background: #e8e8e8;
+  &:hover {
+    background: #dadada;
+  }
+  &:disabled {
+    color: #8d8e97;
+    background: #e8e8e8;
+  }
+}
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 132px;
+  height: 56px;
+  margin: 50px 10px;
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  color: red;
+  background: none;
+  &:hover {
+    border: 1px solid #aeaeae;
+    background: none;
+  }
+  &:disabled {
+    color: #8d8e97;
+    background-color: #fff;
+    background: #e8e8e8;
+    border: none;
+  }
+}
+.ButtonWIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 132px;
+  height: 56px;
+  margin: 50px 10px;
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  width: 241px;
+  color: #313037;
+  background: #e8e8e8;
+  svg > path {
+    fill: black;
+  }
+  &:hover {
+    background: #5360cd;
+  }
+  &:disabled {
+    color: #8d8e97;
+    background: #e8e8e8;
+    svg > path {
+      fill: #8d8e97;
+    }
+  }
+}
+.ButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 132px;
+  height: 56px;
+  margin: 50px 10px;
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  width: 88px;
+  margin-right: 0;
+  // background: #e8e8e8;
+  &:hover {
+    svg > path {
+      fill: #dadada;
+    }
+  }
+  &:disabled {
+    color: #8d8e97;
+    // background: #e8e8e8;
+    svg > path {
+      fill: #8d8e97;
+    }
+  }
+}

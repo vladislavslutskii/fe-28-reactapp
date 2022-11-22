@@ -1,0 +1,30 @@
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 83px;
+  background: #2231aa;
+  &_Text {
+    margin-left: 16px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  &_Img {
+    width: 48px;
+    height: 48px;
+    background-color: #5360cd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+  }
+  &_Wrap {
+    padding: 17px 34px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

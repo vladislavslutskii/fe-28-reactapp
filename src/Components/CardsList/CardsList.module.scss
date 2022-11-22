@@ -1,0 +1,28 @@
+.listWrap {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  &__leftSide {
+    width: 768px;
+    &__LargeCard {
+      margin-bottom: 40px;
+    }
+    &__MediumCards {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &__rightSide {
+    width: 352px;
+    &__SmallCards {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__Dark {
+    background-color: #313037;
+  }
+}
+.darkPost svg > path {
+  fill: #fff;
+}

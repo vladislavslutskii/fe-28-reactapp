@@ -1,0 +1,38 @@
+.app {
+  background: rgba(243, 243, 243, 1);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.buttons {
+  display: flex;
+}
+.buttons__disabled {
+  display: flex;
+}
+.Book {
+  margin-right: 15px;
+}
+.ButtonIconLike {
+  &:hover {
+    background: blue;
+  }
+  &:disabled {
+    color: #8d8e97;
+    background: #e8e8e8;
+    svg > path {
+      fill: #8d8e97;
+    }
+  }
+}
+.ButtonIconDis {
+  &:hover {
+    background: red;
+    svg > path {
+      fill: #dadada;
+    }
+  }
+}

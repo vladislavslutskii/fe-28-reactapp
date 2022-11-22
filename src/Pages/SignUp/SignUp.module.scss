@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+.signUp {
+  position: relative;
+  background-color: #fff;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 1120px;
+    margin: 0 auto;
+    &__dark {
+      background-color: #313037;
+    }
+  }
+  &__Dark {
+    background-color: #313037;
+  }
+}
+
+.titleWrap {
+  margin-top: 72px;
+  margin-right: auto;
+
+  &__signUpText {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 80px;
+    color: #313037;
+  }
+  &__backToHomeText {
+    text-decoration: none;
+    color: black;
+  }
+  &__backToHomeTextDark {
+    color: #fff;
+  }
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 72px;
+  margin-bottom: 152px;
+  padding: 40px;
+  border: 1px solid #dadada;
+  width: 624px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  &__inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    &__nameInput {
+      width: 100%;
+    }
+    &__emailInput {
+      width: 100%;
+    }
+    &__passwordInput {
+      width: 100%;
+    }
+    &__confirmPasswordInput {
+      width: 100%;
+    }
+    &__forgotPass {
+      margin-top: 16px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      &__Dark {
+        color: #fff;
+      }
+    }
+  }
+  &__Dark {
+    background-color: #313037;
+  }
+}
+.label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #313037;
+  &__Dark {
+    color: #fff;
+  }
+}
+.buttonAndText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__signUpButton {
+    margin-top: 8px;
+    width: 100%;
+  }
+  &__formFooterText {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8d8e97;
+    &__Dark {
+      color: #fff;
+    }
+    &__SignUp {
+      text-decoration: none;
+      color: #2231aa;
+      &__Dark {
+        text-decoration: none;
+        color: #5360cd;
+      }
+    }
+  }
+}
+.error__Dark {
+  color: #fff;
+}

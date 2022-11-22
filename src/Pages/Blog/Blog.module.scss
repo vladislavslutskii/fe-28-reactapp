@@ -1,0 +1,143 @@
+.Blog {
+  padding-top: 72px;
+  background-color: #fff;
+  &__container {
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 1125px;
+    margin: 0 auto;
+    &__titleWrap {
+      margin-bottom: 40px;
+      margin-right: auto;
+      &__Dark {
+        background-color: #313037;
+      }
+    }
+    &__tabWrap {
+      margin-bottom: 65px;
+      margin-right: auto;
+      display: flex;
+    }
+    &__Dark {
+      background-color: #313037;
+    }
+    &__selectWrap {
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: flex-end;
+      border: none;
+    }
+    &__select {
+      width: 150px;
+      height: 50px;
+      text-align: center;
+      background-color: rgba(222, 222, 235, 0.555);
+      border: none;
+      font-size: 18px;
+      &:hover {
+        border: none;
+        outline: none;
+        border: transparent;
+      }
+      &:focus {
+        border: none;
+        outline: none;
+        border: transparent;
+      }
+      &__Dark {
+        color: #fff;
+        background-color: #313037;
+        border: 0.3px solid #fff;
+        &:hover {
+          border: 0.3px solid #fff;
+        }
+        &:focus {
+          border: 0.3px solid #fff;
+        }
+      }
+    }
+  }
+
+  &__Dark {
+    background-color: #313037;
+  }
+}
+.Blog__container__Paginate {
+  padding-bottom: 60px;
+  padding-top: 30px;
+}
+.lottie__container {
+  &__animation {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+.modalActive {
+  background: rgba(38, 34, 47, 0.5);
+}
+
+.pagesContainer {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  width: 100%;
+  height: 24px;
+  &__Dark {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    height: 24px;
+    background-color: #313037;
+  }
+}
+.pagesContainer1 {
+  display: none;
+}
+.pageNumber {
+  display: block !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #313037 !important;
+  width: 50px !important;
+  height: 50px !important;
+  &:hover {
+    color: blue !important;
+  }
+}
+.pageNumber__Dark {
+  display: block !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  width: 50px !important;
+  height: 50px !important;
+  &:hover {
+    color: blue !important;
+  }
+}
+.activePageNumber {
+  color: green !important;
+}
+.nextButton {
+  margin-left: auto;
+  color: #8d8e97;
+  position: relative;
+  svg > path {
+    fill: #8d8e97;
+  }
+}
+.prevButton {
+  margin-right: auto;
+  position: relative;
+  color: #8d8e97;
+  margin-right: auto;
+}

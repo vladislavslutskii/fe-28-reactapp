@@ -1,0 +1,12 @@
+.titleWrap {
+  width: 100%;
+  font-weight: 700;
+  font-size: 48px;
+  color: #313037;
+  margin-bottom: 40px !important;
+  display: flex;
+  justify-content: center;
+  &__Dark {
+    background-color: #313037;
+  }
+}

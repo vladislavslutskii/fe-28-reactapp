@@ -1,0 +1,51 @@
+.emptyStateWrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  &__Dark {
+    background-color: #313037;
+  }
+  &__containerImg {
+    background-color: #aeaeae;
+    padding: 30px;
+    border-radius: 50%;
+    Img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+    }
+  }
+  &__containerText {
+    text-align: center;
+    margin-top: 35px;
+  }
+  &__Dark {
+    background-color: #313037;
+    color: white;
+  }
+}
+.nothingFound {
+  font-weight: bold;
+  font-size: 28px;
+}
+.tryToAdjusting {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.goHome {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: blue;
+  }
+  &__Dark {
+    background-color: #313037;
+    color: white;
+  }
+}
