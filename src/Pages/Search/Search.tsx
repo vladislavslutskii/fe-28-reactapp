@@ -35,7 +35,7 @@ const Search = () => {
   const isSearchPostsLoading = useSelector(
     PostsSelectors.getSearchedPostsLoading
   );
-  const searchString = useSelector(PostsSelectors.getSearchStrng);
+  // const searchString = useSelector(PostsSelectors.getSearchStrng);
   const searchedPostsCount = useSelector(PostsSelectors.getSearchedPostsCount);
 
   const [page, setPage] = useState(DEFAULT_PAGE_NUMBER);
