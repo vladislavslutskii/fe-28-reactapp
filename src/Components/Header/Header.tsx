@@ -18,7 +18,7 @@ import { PathNames } from "../../Pages/Router";
 import { getUser } from "../../Redux/reducers/authReducer";
 import { searchForPosts } from "../../Redux/reducers/postsReducer";
 
-const Header = ({ onClick, isOpenedMenu }: any) => {
+const Header = ({ onClick, openInput }: any) => {
   const dispatch = useDispatch();
   const [value, setValue] = useState<string>("");
   const onChange = (inputValue: string) => {
@@ -61,7 +61,7 @@ const Header = ({ onClick, isOpenedMenu }: any) => {
     <nav className={styles.header}>
       <div className={styles.header__burger} onClick={onClick}>
         <div className={styles.burgerIcon}>
-          {isOpenedMenu ? (
+          {openInput ? (
             <BurgerIconClose
               className={``}
               width={`25`}
@@ -76,7 +76,7 @@ const Header = ({ onClick, isOpenedMenu }: any) => {
           )}
         </div>
       </div>
-      {!isOpenedMenu ? null : (
+      {!openInput ? null : (
         <Input
           className={styles.header__input}
           placeholder={"Search..."}
@@ -84,7 +84,7 @@ const Header = ({ onClick, isOpenedMenu }: any) => {
           value={value}
         />
       )}
-      {isOpenedMenu && (
+      {openInput && (
         <div className={styles.header__search} onClick={onSearch}>
           <HeaderSearch
             className={styles.header__search__icon}
@@ -102,7 +102,7 @@ const Header = ({ onClick, isOpenedMenu }: any) => {
           </div>
         )}
       </div>
-      {isOpenedMenu && <Menu />}
+      {openInput && <Menu />}
     </nav>
   );
 };

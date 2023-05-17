@@ -8,9 +8,13 @@ import { PathNames } from "../Router";
 
 const PagesWrapper = () => {
   const location = useLocation();
+  const [openInput, setOpenInput] = useState(false);
   return (
     <div>
-      <Header></Header>
+      <Header
+        onClick={() => setOpenInput(!openInput)}
+        openInput={openInput}
+      ></Header>
       {location.pathname === PathNames.Home ? <Blog></Blog> : <Outlet></Outlet>}
       <Footer></Footer>
     </div>
